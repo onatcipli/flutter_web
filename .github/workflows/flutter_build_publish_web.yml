@@ -20,6 +20,8 @@ jobs:
       - run: |
           cd build/web
           git init
+          git config --global user.email onatcipli@outlook.com
+          git config --global user.name onatcipli
           git status
           git remote add origin https://${{secrets.commit_secret}}@github.com/onatcipli/onatcipli.github.io.git
           git checkout -b gh-pages

@@ -23,7 +23,7 @@ jobs:
           git config --global user.email onatcipli@outlook.com
           git config --global user.name onatcipli
           git status
-          git remote add origin https://${{secrets.commit_secret}}@github.com/onatcipli/onatcipli.github.io.git
+          git remote add origin https://${{secrets.commit_secret}}@github.com/onatcipli/flutter_web.git
           git checkout -b gh-pages
           ls
           git add --all
